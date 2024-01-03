@@ -2,19 +2,23 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import '../css/Navbar.css';
 import { Link, useMatch, useResolvedPath } from 'react-router-dom';
+import Routing from "./Routing";
 
 export default function Navbar(){
     const path = window.location.pathname;
     return (
-        <nav className="nav">
-            <Link to="/" className="site--title">punchcard</Link>
-            <ul>
-                <CustomLink to="/pricing">Pricing</CustomLink>
-                <CustomLink to="/support">Support</CustomLink>
-                <CustomLink to="/login">Login</CustomLink>
-                <CustomLink to="/signup">Sign Up</CustomLink>
-            </ul>
-        </nav>
+        <div>
+            <nav className="nav">
+                <Link to="/" className="site--title">punchcard</Link>
+                <ul>
+                    <CustomLink to="/pricing">Pricing</CustomLink>
+                    <CustomLink to="/support">Support</CustomLink>
+                    <CustomLink to="/login">Login</CustomLink>
+                    <CustomLink to="/signup">Try Free</CustomLink>
+                </ul>
+            </nav>
+            <Routing />
+        </div>
     )
 }
 

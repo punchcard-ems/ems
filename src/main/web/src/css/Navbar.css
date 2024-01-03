@@ -7,8 +7,8 @@ body {
 }
 
 .nav {
-    background-color: #333;
-    color: white;
+    background-color: #d2d1d3;
+    color: #414141;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -26,26 +26,28 @@ body {
 }
 
 .nav li.active{
-    color: #61dafb;
+    color: #50C878;
+    font-weight: bold;
 
 }
 .nav li:hover{
-    color: #61dafb;
+    color: #50C878;
 
 }
 
 
 .nav ul {
     padding: 0;
-    margin: 0;
+    margin: 0 3% 0 0;
     list-style: none;
     display: flex;
-    gap: 1rem;
+    gap: 5rem;
 }
 
 
 .site--title {
     font-size: 3rem;
     font-weight: bold;
+    margin: 0 0 0 1%;
 }
 
