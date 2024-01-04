@@ -6,6 +6,7 @@ import Login from "./pages/Login";
 import SignUp from "./pages/SignUp";
 import React from "react";
 import '../css/Routing.css';
+import LearnMore from "./pages/LearnMore";
 
 export default function Routing() {
    return(
@@ -16,6 +17,7 @@ export default function Routing() {
             <Route path="/support" element={<Support/>}/>
             <Route path="/login" element={<Login/>}/>
             <Route path="/signup" element={<SignUp/>}/>
+            <Route path="/learnmore" element={<LearnMore/>}/>
         </Routes>
     </div>
    )

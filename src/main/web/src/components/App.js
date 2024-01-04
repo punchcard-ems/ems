@@ -5,7 +5,6 @@ import ReactDOM from 'react-dom/client';
 import Navbar from "./Navbar";
 
 function App() {
-
   return (
     <div className="App">
         <Navbar/>
