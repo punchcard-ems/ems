@@ -5,7 +5,7 @@ import { Link, useMatch, useResolvedPath } from 'react-router-dom';
 import Routing from "./Routing";
 
 export default function Navbar(){
-    const path = window.location.pathname;
+
     return (
         <div>
             <nav className="nav">

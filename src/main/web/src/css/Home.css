@@ -6,4 +6,62 @@
 }
 .main--home {
     display: flex;
+    margin: 5% 0 0 0;
+}
+.text--container {
+    margin: 1.75% 0 0 8%;
+    text-align: left;
+}
+.header1 {
+    font-size: 40px;
+    font-weight: bold;
+    margin: 0 0 60px 0;
+}
+
+.header2 {
+    font-size: 25px;
+    color: #50C878;
+    font-weight: bold;
+    margin: 0 0 30px 0;
+
+}
+
+.paragraph--container {
+    margin: 0 0 30px 0;
+    line-height: 1.75;
+    font-size: 20px;
+    width: 600px;
+}
+
+.buttonLink--container {
+    display: flex;
+    align-items: center;
+
+}
+.signup-button {
+    background-color: #50C878;
+    color: #414141;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px 10px 20px;
+    margin: 0 30px 0 0;
+    font-size: 20px;
+}
+
+.signup-button:hover {
+    color: white;
+}
+
+.learnmore-button:hover {
+    color: #50C878;
+}
+
+.learnmore-button {
+    background-color: #F3F2F7;
+    color: #414141;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 0 30px 0 0;
+    font-size: 20px;
 }

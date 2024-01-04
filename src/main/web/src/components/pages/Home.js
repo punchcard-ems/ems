@@ -1,5 +1,7 @@
 import ImageSlider from "../ImageSlider";
 import React from "react";
+import {Link, useMatch, useNavigate, useResolvedPath} from 'react-router-dom';
+import '../../css/Home.css';
 
 export default function Home() {
     const slides = [
@@ -14,30 +16,42 @@ export default function Home() {
         { text: "Shift Transfer" },
     ];
 
+    let navigate = useNavigate()
+
+    const goToSignUp = () => {
+        navigate("/signup")
+    }
+
+    const gotToLearnMore = () => {
+        navigate("/learnmore")
+    }
+
 
     const containerStyles = {
-        width: "500px",
-        height: "680px",
+        width: "350px",
+        height: "700px",
         margin: "0 auto",
-    };
-
-    // using inline until i can figure out how to import the correct ones
-    const pageStyles = {
-      display: "flex",
     };
 
 
     return (
-        <div style={pageStyles}>
-            <div>
-                <h3>Built For Employees</h3>
-                <p>
+        <div className="main--home">
+            <div className="text--container">
+                <h1 className="header1">Built For Employees</h1>
+                <h2 className="header2">Create Shifts, Accept Shifts, Transfer Shifts</h2>
+
+                <p className="paragraph--container">
                     Redefine how your organization handles employee management.
                     Put your employees in the driver seat of their schedules and revolutionize your employee satisfaction
                 </p>
+                <div className="buttonLink--container">
+                    <button className="signup-button" onClick={goToSignUp} >Get Started</button>
+                    <button className="learnmore-button" onClick={gotToLearnMore}>Learn More</button>
+                </div>
+
             </div>
             <div style={containerStyles}>
-                <ImageSlider slides={slides} parentWidth={500} />
+                <ImageSlider slides={slides} parentWidth={350} />
             </div>
         </div>
     );

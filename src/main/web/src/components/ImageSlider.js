@@ -27,19 +27,12 @@ const slidesContainerOverflowStyles = {
 const ImageSlider = ({ slides, parentWidth }) => {
     const timerRef = useRef(null);
     const [currentIndex, setCurrentIndex] = useState(0);
-    const goToPrevious = () => {
-        const isFirstSlide = currentIndex === 0;
-        const newIndex = isFirstSlide ? slides.length - 1 : currentIndex - 1;
-        setCurrentIndex(newIndex);
-    };
     const goToNext = useCallback(() => {
         const isLastSlide = currentIndex === slides.length - 1;
         const newIndex = isLastSlide ? 0 : currentIndex + 1;
         setCurrentIndex(newIndex);
     }, [currentIndex, slides]);
-    const goToSlide = (slideIndex) => {
-        setCurrentIndex(slideIndex);
-    };
+
     const getSlideStylesWithBackground = (slideIndex) => ({
         ...slideStyles,
         backgroundImage: `url(${slides[slideIndex].url})`,
