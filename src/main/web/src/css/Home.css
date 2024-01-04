@@ -1,0 +1,9 @@
+.slider--container{
+    width: 500px;
+    height: 200px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.main--home {
+    display: flex;
+}
