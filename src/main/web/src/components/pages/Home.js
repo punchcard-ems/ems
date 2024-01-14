@@ -1,6 +1,6 @@
 import ImageSlider from "../ImageSlider";
 import React from "react";
-import {Link, useMatch, useNavigate, useResolvedPath} from 'react-router-dom';
+import {useNavigate} from 'react-router-dom';
 import '../../css/Home.css';
 
 export default function Home() {
@@ -21,11 +21,6 @@ export default function Home() {
     const goToSignUp = () => {
         navigate("/signup")
     }
-
-    const gotToLearnMore = () => {
-        navigate("/learnmore")
-    }
-
 
     const containerStyles = {
         width: "267px",

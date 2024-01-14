@@ -9,7 +9,7 @@ export default function Navbar(){
     return (
         <div>
             <nav className="nav">
-                <Link to="/" className="site--title">punchcard</Link>
+                <Link to="/" className="site--title">Punchcard</Link>
                 <ul>
                     <CustomLink to="/pricing">Pricing</CustomLink>
                     <CustomLink to="/support">Support</CustomLink>
