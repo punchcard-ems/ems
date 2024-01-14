@@ -1,5 +1,6 @@
 import {Route, Routes} from "react-router-dom";
 import Home from "./pages/Home";
+import WhyPunchcard from "./pages/WhyPunchcard";
 import Pricing from "./pages/Pricing";
 import Support from "./pages/Support";
 import Login from "./pages/Login";
@@ -13,6 +14,7 @@ export default function Routing() {
        <div className="container">
         <Routes>
             <Route path="/" element={<Home/>}/>
+            <Route path="/whyPunchcard" element={<WhyPunchcard/>}/>
             <Route path="/pricing" element={<Pricing/>}/>
             <Route path="/support" element={<Support/>}/>
             <Route path="/login" element={<Login/>}/>

@@ -11,6 +11,7 @@ export default function Navbar(){
             <nav className="nav">
                 <Link to="/" className="site--title">punchcard</Link>
                 <ul>
+                    <CustomLink to="/whyPunchcard">Why Punchcard</CustomLink>
                     <CustomLink to="/pricing">Pricing</CustomLink>
                     <CustomLink to="/support">Support</CustomLink>
                     <CustomLink to="/login">Login</CustomLink>
