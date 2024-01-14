@@ -115,7 +115,7 @@ function TransferShiftModal({transferShiftModal,
                 body: JSON.stringify({
                     shiftId: shiftId,
                     targetEmployeeId: selectedEmployeeId,
-                    sourceEmployeeId: "651f3f35631f63367d896196"
+                    sourceEmployeeId: constEmployeeId
                 }),
             }).then(response => {
                 if (!response.ok) {
@@ -124,6 +124,7 @@ function TransferShiftModal({transferShiftModal,
                 return response.json();
             })
                 .then(data => {
+                    console.log(data);
                     setTransferSubmitData(data);
                     updateReloadKey();
                 })
