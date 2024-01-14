@@ -75,6 +75,10 @@ const AddShiftBody = ({addShiftModal, setAddShiftModal, locationOptions, shiftOp
 
     const weekdays = [
         {
+            key: 7,
+            text: 'Sun',
+        },
+        {
             key: 1,
             text: 'Mon',
         },
@@ -97,10 +101,6 @@ const AddShiftBody = ({addShiftModal, setAddShiftModal, locationOptions, shiftOp
         {
             key: 6,
             text: 'Sat',
-        },
-        {
-            key: 7,
-            text: 'Sun',
         },
     ];
 
