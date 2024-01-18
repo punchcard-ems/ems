@@ -1,0 +1,25 @@
+.pricing {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5% 0 0 0;
+}
+
+.pricing--container {
+    background-color: #28643C;
+    width: 75%;
+    height: 600px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.pricing--paragraph {
+    color: white;
+    font-size: 20px;
+    width: 750px;
+    text-align: center;
+    line-height: 1.75;
+    margin: 10% 0 0 0;
+
+}
