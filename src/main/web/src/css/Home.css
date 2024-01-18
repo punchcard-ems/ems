@@ -6,7 +6,7 @@
 }
 .main--home {
     display: flex;
-    margin: 5% 0 0 0;
+    margin: 2% 0 0 0;
 }
 .text--container {
     margin: 4% 0 0 2.5%;
@@ -52,8 +52,9 @@
     height: 30px;
     width: 200px;
     border-radius: 15px;
-    text-align: center;
+    text-align: left;
     font-size: 15px;
+    padding: 0 0 0 15px;
     border: none;
 }
 .signup-button {

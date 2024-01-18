@@ -5,9 +5,11 @@ import '../../css/Home.css';
 
 export default function Home() {
     const slides = [
-        { url: "http://localhost:3000/punchcard-shift-creation-portrait.png", title: "Shift Creation" },
-        { url: "http://localhost:3000/punchcard-shift-display-portrait.png", title: "Shift Display" },
-        { url: "http://localhost:3000/punchcard-shift-creation-portrait.png", title: "Shift Transfer" },
+        { url: "http://localhost:3000/transfer-shift-and-inbox.png", title: "Shift Creation" },
+        { url: "http://localhost:3000/claim-shift-and-available.png", title: "Shift Display" },
+        { url: "http://localhost:3000/create-shift-and-available.png", title: "Shift Transfer" },
+        { url: "http://localhost:3000/employee-info-and-staff.png", title: "Employee Info" },
+
     ];
 
     const texts = [
@@ -23,8 +25,8 @@ export default function Home() {
     }
 
     const containerStyles = {
-        width: "267px",
-        height: "550px",
+        width: "475px",
+        height: "658px",
         margin: "0 auto",
     };
 
@@ -47,7 +49,7 @@ export default function Home() {
                 </div>
             </div>
             <div style={containerStyles}>
-                <ImageSlider slides={slides} parentWidth={267} />
+                <ImageSlider slides={slides} parentWidth={475} />
             </div>
         </div>
     );
