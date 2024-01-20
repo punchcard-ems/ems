@@ -54,7 +54,7 @@ body {
 }
 
 .free-link {
-    background-color: #FFFFFF;
+    background-color: #F3F2F7;
     border-radius: 10rem;
     transition: background-color 0.2s ease;
     border: 2px solid #50C878;
@@ -65,6 +65,5 @@ body {
 }
 
 .free-link:hover {
-    /*transform: scale(110%);*/
     background-color: #50C878;
 }

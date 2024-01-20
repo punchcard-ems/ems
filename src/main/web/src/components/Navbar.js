@@ -40,7 +40,7 @@ function FreeLink({ to, children, ...props }) {
 
     return (
         <Link to={to} className={`free-link ${isActive ? "active" : ""}`} {...props}>
-            <li className="free-link-text">
+            <li className={`free-link-text ${isActive ? "active" : ""}`}>
                 {children}
             </li>
         </Link>
