@@ -7,7 +7,7 @@ body {
 }
 
 .navbar {
-    background-color: #d2d1d3;
+    background-color: #F3F2F7;
     color: #28643C;
     display: flex;
     justify-content: space-between;
@@ -27,12 +27,13 @@ body {
 }
 
 .navbar li.active{
-    color: #28643C;
+    color: #50C878;
     font-weight: bold;
 
 }
 .navbar li:hover{
-    color: #28643C;
+    color: #28643c;
+    font-weight: bold;
 }
 
 .navbar ul {
