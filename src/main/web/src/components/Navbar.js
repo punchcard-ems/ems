@@ -4,17 +4,17 @@ import '../css/Navbar.css';
 import { Link, useMatch, useResolvedPath } from 'react-router-dom';
 import Routing from "./Routing";
 
-export default function Navbar(){
+export default function Navbar() {
 
     return (
         <div>
-            <nav className="nav">
+            <nav className="navbar">
                 <Link to="/" className="site--title">Punchcard</Link>
                 <ul>
                     <CustomLink to="/pricing">Pricing</CustomLink>
                     <CustomLink to="/support">Support</CustomLink>
                     <CustomLink to="/login">Login</CustomLink>
-                    <CustomLink to="/signup">Try Free</CustomLink>
+                    <FreeLink to="/signup">Try Free</FreeLink>
                 </ul>
             </nav>
             <Routing />
@@ -23,12 +23,26 @@ export default function Navbar(){
 }
 
 
-function CustomLink({ to, children, ...props }){
+function CustomLink({ to, children, ...props }) {
     const resolvedPath = useResolvedPath(to);
     const isActive = useMatch({ path: resolvedPath.pathname , end: true});
+
     return (
         <li className={isActive ? "active" : ""}>
             <Link to={to} {...props}>{children}</Link>
         </li>
+    )
+}
+
+function FreeLink({ to, children, ...props }) {
+    const resolvedPath = useResolvedPath(to);
+    const isActive = useMatch({ path: resolvedPath.pathname , end: true});
+
+    return (
+        <Link to={to} className={`free-link ${isActive ? "active" : ""}`} {...props}>
+            <li className={`free-link-text ${isActive ? "active" : ""}`}>
+                {children}
+            </li>
+        </Link>
     )
 }
