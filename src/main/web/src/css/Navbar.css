@@ -6,7 +6,7 @@ body {
     margin: 0;
 }
 
-.nav {
+.navbar {
     background-color: #d2d1d3;
     color: #28643C;
     display: flex;
@@ -17,7 +17,7 @@ body {
     height: 80px;
 }
 
-.nav a {
+.navbar a {
     color: inherit;
     text-decoration: none;
     height: 100%;
@@ -26,16 +26,16 @@ body {
     padding: .25rem;
 }
 
-.nav li.active{
-    color: #50C878;
+.navbar li.active{
+    color: #28643C;
     font-weight: bold;
 
 }
-.nav li:hover{
-    color: #50C878;
+.navbar li:hover{
+    color: #28643C;
 }
 
-.nav ul {
+.navbar ul {
     padding: 0;
     margin: 0 8% 0 0;
     list-style: none;
@@ -50,4 +50,20 @@ body {
     font-weight: bold;
     color: #50C878;
     margin: 0 0 0 8%;
+}
+
+.free-link {
+    background-color: #FFFFFF;
+    border-radius: 10rem;
+    transition: background-color 0.2s ease;
+    border: 2px solid #50C878;
+}
+
+.free-link-text {
+    padding: 0.2rem 1rem;
+}
+
+.free-link:hover {
+    /*transform: scale(110%);*/
+    background-color: #50C878;
 }
