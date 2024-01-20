@@ -51,7 +51,7 @@
 .email--input{
     height: 30px;
     width: 200px;
-    border-radius: 15px;
+    border-radius: 10rem;
     text-align: left;
     font-size: 15px;
     padding: 0 0 0 15px;
@@ -60,19 +60,22 @@
 .signup-button {
     background-color: #50C878;
     height: 30px;
-    color: #414141;
+    color: #28643C;
+    text-decoration: none;
     border: none;
-    border-radius: 20px;
+    border-radius: 10rem;
     margin: 0 30px 0 10px;
     padding: 0 30px 0 30px;
     font-size: 13px;
     text-align: center;
+    align-items: center;
 }
 
 
 
 .signup-button:hover {
     color: white;
+    font-weight: bold;
 }
 
 .learnmore-button:hover {
