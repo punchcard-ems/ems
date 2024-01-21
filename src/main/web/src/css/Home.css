@@ -1,13 +1,21 @@
-.slider--container{
+.slider--container {
     width: 31.25rem;
     height: 12.5rem;
     margin: 0 auto;
     overflow: hidden;
 }
+
+@media (max-width: 480px) {
+    .slider--container {
+        display: none;
+    }
+}
+
 .main--home {
     display: flex;
     margin: 2% 0 0 0;
 }
+
 .text--container {
     margin: 4% 0 0 2.5%;
     text-align: left;
