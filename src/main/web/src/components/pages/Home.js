@@ -1,6 +1,6 @@
 import ImageSlider from "../ImageSlider";
 import React from "react";
-import {useNavigate} from 'react-router-dom';
+import {Link, useNavigate} from 'react-router-dom';
 import '../../css/Home.css';
 
 export default function Home() {
@@ -19,10 +19,6 @@ export default function Home() {
     ];
 
     let navigate = useNavigate()
-
-    const goToSignUp = () => {
-        navigate("/signup")
-    }
 
     const containerStyles = {
         width: "475px",
@@ -44,7 +40,7 @@ export default function Home() {
                     </p>
                     <div className="buttonLink--container">
                         <input className="email--input" type="text" placeholder="Your Email Address"/>
-                        <button className="signup-button" onClick={goToSignUp} >Get Started</button>
+                        <Link className="signup-button" to="/signup">Get Started</Link>
                     </div>
                 </div>
             </div>
