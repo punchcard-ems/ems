@@ -44,7 +44,7 @@ export default function Home() {
                     </div>
                 </div>
             </div>
-            <div style={containerStyles}>
+            <div className="slider--container" style={containerStyles}>
                 <ImageSlider slides={slides} parentWidth={475} />
             </div>
         </div>
