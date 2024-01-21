@@ -16,10 +16,24 @@
     margin: 2% 0 0 0;
 }
 
+@media (max-width: 480px) {
+    .main--home {
+        display: flex;
+        margin: 0;
+    }
+}
+
 .text--container {
     margin: 4% 0 0 2.5%;
     text-align: left;
     color: white;
+}
+
+@media (max-width: 480px) {
+    .text--container {
+        margin: 0;
+        max-width: 100%;
+    }
 }
 
 .text--background {
@@ -27,6 +41,16 @@
     margin: 0 0 0 7%;
     width: 55%;
     border-radius: 1.375rem;
+}
+
+@media (max-width: 480px) {
+    .text--background {
+        background-color: #28643C;
+        border-radius: 1.375rem;
+        width: 100%;
+        margin: 0;
+        padding: 1rem;
+    }
 }
 
 .header1 {
@@ -48,6 +72,12 @@
     line-height: 1.75;
     font-size: 1.25rem;
     width: 37.5rem;
+}
+
+@media (max-width: 480px) {
+    .paragraph--container {
+        width: 100%;
+    }
 }
 
 .buttonLink--container {
