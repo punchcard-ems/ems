@@ -35,8 +35,18 @@ export default function Home() {
                     <h2 className="header2">Create, Claim, and Transfer Shifts All From One Place</h2>
 
                     <p className="paragraph--container">
-                        Redefine how your organization handles employee management.
-                        Put your employees in the driver seat of their schedules and revolutionize your employee satisfaction
+                        Redefine how your organization handles employee management.<br/>
+                        <br/>
+                        <br/>
+                        <br/>
+                        <br/>
+                        <br/><br/>
+                        <br/>
+                        <br/>
+                        <br/>
+                        <br/><br/><br/><br/><br/><br/><br/><br/><br/>
+
+                        Put your employees in the driver seat of their schedules and revolutionize your employee satisfaction.
                     </p>
                     <div className="buttonLink--container">
                         <input className="email--input" type="text" placeholder="Your Email Address"/>

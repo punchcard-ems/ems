@@ -24,14 +24,12 @@
 }
 
 .text--container {
-    margin: 4% 0 0 2.5%;
     text-align: left;
     color: white;
 }
 
 @media (max-width: 480px) {
     .text--container {
-        margin: 0;
         max-width: 100%;
     }
 }
@@ -41,6 +39,7 @@
     margin: 0 0 0 7%;
     width: 55%;
     border-radius: 2rem;
+    padding: 2rem;
 }
 
 @media (max-width: 480px) {
