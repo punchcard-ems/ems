@@ -137,10 +137,12 @@
 
 @media (max-width: 480px) {
     .signup-button {
+        color: #FFFFFF;
+        font-weight: bold;
+        font-size: 1.2rem;
         margin: 0;
-        padding: 1rem;
+        padding: 0.7rem;
         width: 100%;
-        font-size: 1rem;
     }
 }
 
