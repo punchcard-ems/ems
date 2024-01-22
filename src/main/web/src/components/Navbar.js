@@ -3,6 +3,8 @@ import ReactDOM from 'react-dom/client';
 import '../css/Navbar.css';
 import { Link, useMatch, useResolvedPath } from 'react-router-dom';
 import Routing from "./Routing";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBars } from '@fortawesome/free-solid-svg-icons';
 
 export default function Navbar() {
 
@@ -19,6 +21,7 @@ export default function Navbar() {
             </nav>
             <header className="mobile-header">
                 <Link to="/" className="site--title">Punchcard</Link>
+                <FontAwesomeIcon icon={faBars} size="2x" color='#28643C' />
             </header>
             <Routing />
         </div>
