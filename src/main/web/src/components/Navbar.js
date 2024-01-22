@@ -66,8 +66,12 @@ export default function Navbar() {
                 <div ref={sidebarRef} className="sidebar">
                     <div className="sidebar-header">
                         <Link to="/" onClick={closeNav} className="sidebar-title">Punchcard</Link>
-                        <button onClick={closeNav} className="close-btn" aria-label="close-menu">
-                            <FontAwesomeIcon icon={faXmark} size="2x" color='#28643C' className="x-icon" />
+                        <button
+                            className="close-btn"
+                            onClick={closeNav}
+                            aria-label="close-menu"
+                        >
+                            <FontAwesomeIcon icon={faXmark} size="2x" color='#28643C' />
                         </button>
                     </div>
                     <div className="nav-list">
@@ -75,11 +79,11 @@ export default function Navbar() {
                         <Link to="/" onClick={closeNav} className="page-link">Product</Link>
                         <Link to="/pricing" onClick={closeNav} className="page-link">Pricing</Link>
                         <Link to="/support" onClick={closeNav} className="page-link">Support</Link>
-                        <Link to="/login" onClick={closeNav} className="page-link">Login</Link>
                     </div>
                     <div className="whitespace" />
-                    <div className="sidebar-free-btn">
-                        <Link to="/signup" onClick={closeNav} className="sidebar-free-btn-text">Try Free</Link>
+                    <div className="bottom-buttons">
+                        <Link to="/login" onClick={closeNav} className="sidebar-login-btn">Login</Link>
+                        <Link to="/signup" onClick={closeNav} className="sidebar-free-btn">Try Free</Link>
                     </div>
                 </div>
             </header>
