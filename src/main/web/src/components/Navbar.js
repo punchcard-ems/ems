@@ -66,8 +66,12 @@ export default function Navbar() {
                 <div ref={sidebarRef} className="sidebar">
                     <div className="sidebar-header">
                         <Link to="/" onClick={closeNav} className="sidebar-title">Punchcard</Link>
-                        <button onClick={closeNav} className="close-btn" aria-label="close-menu">
-                            <FontAwesomeIcon icon={faXmark} size="2x" color='#28643C' className="x-icon" />
+                        <button
+                            className="close-btn"
+                            onClick={closeNav}
+                            aria-label="close-menu"
+                        >
+                            <FontAwesomeIcon icon={faXmark} size="2x" color='#28643C' />
                         </button>
                     </div>
                     <div className="nav-list">
