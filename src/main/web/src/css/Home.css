@@ -12,9 +12,12 @@
     .main--home {
         display: flex;
         margin: 0;
+        padding: 0 1rem;
     }
     .text--container {
         max-width: 100%;
+        text-align: left;
+        color: #FFFFFF;
     }
     .text--background {
         background-color: #28643C;
@@ -25,14 +28,20 @@
     }
     .header1 {
         font-size: 2.2rem;
+        font-weight: normal;
         margin: 0 0 2rem 0;
     }
     .header2 {
         font-size: 1.5rem;
+        color: #50C878;
+        font-weight: normal;
         margin: 0 0 2rem 0;
     }
     .paragraph--container {
         width: 100%;
+        margin: 0 0 3.125rem 0;
+        line-height: 1.75;
+        font-size: 1.25rem;
     }
     .buttonLink--container {
         display: flex;
@@ -44,6 +53,9 @@
         padding: 1rem 0 1rem 1rem;
         width: 100%;
         font-size: 1rem;
+        border-radius: 10rem;
+        text-align: left;
+        border: none;
     }
     .signup-button {
         color: #FFFFFF;
@@ -52,88 +64,86 @@
         margin: 0;
         padding: 0.7rem;
         width: 100%;
+        background-color: #50C878;
+        text-decoration: none;
+        border-radius: 10rem;
+        text-align: center;
+        align-items: center;
     }
 }
 
-.main--home {
-    display: flex;
-    margin: 2% 0 0 0;
-}
-
-.text--container {
-    text-align: left;
-    color: white;
-}
-
-.text--background {
-    background-color: #28643C;
-    margin: 0 0 0 7%;
-    width: 55%;
-    border-radius: 2rem;
-    padding: 2rem;
-}
-
-.header1 {
-    font-size: 2.5rem;
-    font-weight: normal;
-    margin: 0 0 2.5rem 0;
-}
-
-.header2 {
-    font-size: 1.5rem;
-    color: #50C878;
-    font-weight: normal;
-    margin: 0 0 2.5rem 0;
-}
-
-.paragraph--container {
-    margin: 0 0 3.125rem 0;
-    line-height: 1.75;
-    font-size: 1.25rem;
-    width: 37.5rem;
-}
-
-.buttonLink--container {
-    display: flex;
-    align-items: center;
-}
-
-.email--input {
-    width: 12.5rem;
-    border-radius: 10rem;
-    text-align: left;
-    font-size: 0.85rem;
-    padding: 0.5rem 0 0.5rem 0.93rem;
-    border: none;
-}
-
-.signup-button {
-    background-color: #50C878;
-    color: #000000;
-    text-decoration: none;
-    border-radius: 10rem;
-    margin: 0 1.86rem 0 0.625rem;
-    padding: 0.5rem 1rem;
-    font-size: 0.85rem;
-    text-align: center;
-    align-items: center;
-}
-
-.signup-button:hover {
-    color: white;
-    font-weight: bold;
-}
-
-.learnmore-button:hover {
-    color: #50C878;
-}
-
-.learnmore-button {
-    background-color: #F3F2F7;
-    color: #414141;
-    border: none;
-    border-radius: 0.313rem;
-    padding: 0.625rem;
-    margin: 0 1.875rem 0 0;
-    font-size: 1.25rem;
+@media (min-width: 1085px) {
+    .main--home {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0 4rem;
+    }
+    .text--container {
+        text-align: left;
+        color: #FFFFFF;
+    }
+    .text--background {
+        background-color: #28643C;
+        width: 55%;
+        border-radius: 2rem;
+        padding: 2rem;
+    }
+    .header1 {
+        font-size: 2.5rem;
+        font-weight: normal;
+        margin: 0 0 2.5rem 0;
+    }
+    .header2 {
+        font-size: 1.5rem;
+        color: #50C878;
+        font-weight: normal;
+        margin: 0 0 2.5rem 0;
+    }
+    .paragraph--container {
+        margin: 0 0 3.125rem 0;
+        line-height: 1.75;
+        font-size: 1.25rem;
+        width: 37.5rem;
+    }
+    .buttonLink--container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    .email--input {
+        width: 12.5rem;
+        border-radius: 10rem;
+        text-align: left;
+        font-size: 0.85rem;
+        padding: 0.5rem 0 0.5rem 0.93rem;
+        border: none;
+    }
+    .signup-button {
+        background-color: #50C878;
+        color: #000000;
+        text-decoration: none;
+        border-radius: 10rem;
+        margin: 0 1.86rem 0 0.625rem;
+        padding: 0.5rem 1rem;
+        font-size: 0.85rem;
+        text-align: center;
+        align-items: center;
+    }
+    .signup-button:hover {
+        color: white;
+        font-weight: bold;
+    }
+    .learnmore-button:hover {
+        color: #50C878;
+    }
+    .learnmore-button {
+        background-color: #F3F2F7;
+        color: #414141;
+        border: none;
+        border-radius: 0.313rem;
+        padding: 0.625rem;
+        margin: 0 1.875rem 0 0;
+        font-size: 1.25rem;
+    }
 }
