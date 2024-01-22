@@ -121,7 +121,8 @@
     .signup-button {
         width: 50%;
         background-color: #50C878;
-        color: #000000;
+        color: #FFFFFF;
+        font-weight: bold;
         text-decoration: none;
         border-radius: 10rem;
         margin: 0;
@@ -187,7 +188,7 @@
     }
     .signup-button {
         background-color: #50C878;
-        color: #000000;
+        color: #28643C;
         text-decoration: none;
         border-radius: 10rem;
         margin: 0 1.86rem 0 0.625rem;
