@@ -40,13 +40,13 @@
     background-color: #28643C;
     margin: 0 0 0 7%;
     width: 55%;
-    border-radius: 1.375rem;
+    border-radius: 2rem;
 }
 
 @media (max-width: 480px) {
     .text--background {
         background-color: #28643C;
-        border-radius: 1.375rem;
+        border-radius: 2rem;
         width: 100%;
         margin: 0;
         padding: 1rem;
@@ -56,15 +56,14 @@
 .header1 {
     font-size: 2.5rem;
     font-weight: normal;
-    margin: 0 0 2.813rem 0;
+    margin: 0 0 2.5rem 0;
 }
 
 .header2 {
-    font-size: 1.563rem;
+    font-size: 1.5rem;
     color: #50C878;
     font-weight: normal;
-    margin: 0 0 2.813rem 0;
-
+    margin: 0 0 2.5rem 0;
 }
 
 .paragraph--container {
@@ -104,7 +103,7 @@
 
 @media (max-width: 480px) {
     .email--input {
-        margin: 0 0 1.5rem 0;
+        margin: 0 0 1rem 0;
         padding: 1rem 0 1rem 1rem;
         width: 100%;
         font-size: 1rem;
@@ -125,7 +124,7 @@
 
 @media (max-width: 480px) {
     .signup-button {
-        margin: 0 0 0.5rem 0;
+        margin: 0;
         padding: 1rem;
         width: 100%;
         font-size: 1rem;
