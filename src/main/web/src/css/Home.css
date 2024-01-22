@@ -2,7 +2,6 @@
     width: 31.25rem;
     height: 12.5rem;
     margin: 0 auto;
-    overflow: hidden;
 }
 
 @media (max-width: 480px) {
