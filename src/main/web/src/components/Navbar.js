@@ -17,6 +17,9 @@ export default function Navbar() {
                     <FreeLink to="/signup">Try Free</FreeLink>
                 </ul>
             </nav>
+            <header className="mobile-header">
+                <Link to="/" className="site--title">Punchcard</Link>
+            </header>
             <Routing />
         </div>
     )
