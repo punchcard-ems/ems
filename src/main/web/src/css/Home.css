@@ -59,11 +59,25 @@
     margin: 0 0 2.5rem 0;
 }
 
+@media (max-width: 480px) {
+    .header1 {
+        font-size: 2.2rem;
+        margin: 0 0 2rem 0;
+    }
+}
+
 .header2 {
     font-size: 1.5rem;
     color: #50C878;
     font-weight: normal;
     margin: 0 0 2.5rem 0;
+}
+
+@media (max-width: 480px) {
+    .header2 {
+        font-size: 1.5rem;
+        margin: 0 0 2rem 0;
+    }
 }
 
 .paragraph--container {

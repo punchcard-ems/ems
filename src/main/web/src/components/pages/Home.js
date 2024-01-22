@@ -32,7 +32,7 @@ export default function Home() {
             <div className="text--background">
                 <div className="text--container">
                     <h1 className="header1">Put Employees First</h1>
-                    <h2 className="header2">Create Shifts, Accept Shifts, Transfer Shifts</h2>
+                    <h2 className="header2">Create, Claim, and Transfer Shifts All From One Place</h2>
 
                     <p className="paragraph--container">
                         Redefine how your organization handles employee management.
