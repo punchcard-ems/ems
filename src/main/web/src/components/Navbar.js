@@ -82,9 +82,7 @@ export default function Navbar() {
                         <Link to="/login" onClick={closeNav} className="page-link">Login</Link>
                     </div>
                     <div className="whitespace" />
-                    <div className="sidebar-free-btn">
-                        <Link to="/signup" onClick={closeNav} className="sidebar-free-btn-text">Try Free</Link>
-                    </div>
+                    <Link to="/signup" onClick={closeNav} className="sidebar-free-btn">Try Free</Link>
                 </div>
             </header>
             <Routing />
