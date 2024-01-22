@@ -79,10 +79,12 @@ export default function Navbar() {
                         <Link to="/" onClick={closeNav} className="page-link">Product</Link>
                         <Link to="/pricing" onClick={closeNav} className="page-link">Pricing</Link>
                         <Link to="/support" onClick={closeNav} className="page-link">Support</Link>
-                        <Link to="/login" onClick={closeNav} className="page-link">Login</Link>
                     </div>
                     <div className="whitespace" />
-                    <Link to="/signup" onClick={closeNav} className="sidebar-free-btn">Try Free</Link>
+                    <div className="bottom-buttons">
+                        <Link to="/login" onClick={closeNav} className="sidebar-login-btn">Login</Link>
+                        <Link to="/signup" onClick={closeNav} className="sidebar-free-btn">Try Free</Link>
+                    </div>
                 </div>
             </header>
             <Routing />
