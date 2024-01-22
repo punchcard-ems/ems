@@ -1,12 +1,47 @@
-import React from 'react';
+import React, {useEffect, useRef, useState} from 'react';
 import ReactDOM from 'react-dom/client';
 import '../css/Navbar.css';
 import { Link, useMatch, useResolvedPath } from 'react-router-dom';
 import Routing from "./Routing";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBars } from '@fortawesome/free-solid-svg-icons';
+import { faBars, faXmark } from '@fortawesome/free-solid-svg-icons';
 
 export default function Navbar() {
+    const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+    const sidebarRef = useRef(null);
+
+    const openNav = () => {
+        if (sidebarRef.current) {
+            sidebarRef.current.style.width = "100%";
+            setIsSidebarOpen(true);
+        }
+    };
+
+    const closeNav = () => {
+        if (sidebarRef.current) {
+            sidebarRef.current.style.width = "0";
+            setIsSidebarOpen(false);
+        }
+    };
+
+    useEffect(() => {
+        const closeOffClick = (event) => {
+            if (sidebarRef.current && !sidebarRef.current.contains(event.target)) {
+                closeNav();
+            }
+        }
+
+        if (isSidebarOpen) {
+            document.addEventListener('mousedown', closeOffClick);
+        } else {
+            document.removeEventListener('mousedown', closeOffClick);
+        }
+
+        return () => {
+            document.removeEventListener('mousedown', closeOffClick);
+        };
+    }, [isSidebarOpen]);
+
 
     return (
         <div>
@@ -21,7 +56,32 @@ export default function Navbar() {
             </nav>
             <header className="mobile-header">
                 <Link to="/" className="site--title">Punchcard</Link>
-                <FontAwesomeIcon icon={faBars} size="2x" color='#28643C' />
+                <button
+                    className="hamburger-button"
+                    onClick={openNav}
+                    aria-label="menu"
+                >
+                    <FontAwesomeIcon icon={faBars} size="2x" color='#28643C' />
+                </button>
+                <div ref={sidebarRef} className="sidebar">
+                    <div className="sidebar-header">
+                        <Link to="/" onClick={closeNav} className="sidebar-title">Punchcard</Link>
+                        <button onClick={closeNav} className="close-btn" aria-label="close-menu">
+                            <FontAwesomeIcon icon={faXmark} size="2x" color='#28643C' className="x-icon" />
+                        </button>
+                    </div>
+                    <div className="nav-list">
+                        <Link to="/" onClick={closeNav} className="page-link">About Us</Link>
+                        <Link to="/" onClick={closeNav} className="page-link">Product</Link>
+                        <Link to="/pricing" onClick={closeNav} className="page-link">Pricing</Link>
+                        <Link to="/support" onClick={closeNav} className="page-link">Support</Link>
+                        <Link to="/login" onClick={closeNav} className="page-link">Login</Link>
+                    </div>
+                    <div className="whitespace" />
+                    <div className="sidebar-free-btn">
+                        <Link to="/signup" onClick={closeNav} className="sidebar-free-btn-text">Try Free</Link>
+                    </div>
+                </div>
             </header>
             <Routing />
         </div>

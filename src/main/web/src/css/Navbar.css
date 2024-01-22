@@ -34,7 +34,6 @@ body {
     .navbar li.active {
         color: #50C878;
         font-weight: bold;
-
     }
 
     .navbar li:hover {
@@ -50,7 +49,6 @@ body {
         gap: 5rem;
         color: #414141;
     }
-
 
     .site--title {
         font-size: 3rem;
@@ -95,5 +93,85 @@ body {
         text-decoration: none;
         margin: 0;
         padding: 0;
+    }
+
+    .hamburger-button {
+        border: none;
+    }
+
+    .close-btn {
+        background: none;
+        border: none;
+        position: absolute;
+        top: 2rem;
+        right: 1rem;
+    }
+
+    .sidebar {
+        display: flex;
+        flex-direction: column;
+        white-space: nowrap;
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        right: 0;
+        background-color: #F3F2F7;
+        box-shadow: -0.4rem 0 .75rem rgba(0, 0, 0, 0.2);
+        overflow-x: hidden;
+        padding: 1rem 0 1rem 0;
+        transition: 0.5s;
+    }
+
+    .nav-list {
+        display: flex;
+        flex-direction: column;
+        padding-top: 0.5rem;
+    }
+
+    .sidebar-header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0 0 1rem 1rem;
+    }
+
+    .sidebar-title {
+        font-size: 3rem;
+        font-weight: bold;
+        color: #28643C;
+        text-decoration: none;
+        border: none;
+    }
+
+    .page-link {
+        text-decoration: none;
+        color: #28643C;
+        font-weight: bold;
+        font-size: 1.8rem;
+        padding: 0 0 1rem 1rem;
+    }
+
+    .whitespace {
+        flex-grow: 1;
+    }
+
+    .sidebar-free-btn {
+        min-width: 20rem;
+        display: flex;
+        flex-direction: row;
+        background-color: #50C878;
+        justify-content: center;
+        padding: 1rem;
+        margin: 1rem 1rem 0 1rem;
+        border-radius: 10rem;
+    }
+
+    .sidebar-free-btn-text {
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 1.8rem;
+        color: #FFFFFF;
     }
 }
