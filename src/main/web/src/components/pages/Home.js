@@ -36,16 +36,6 @@ export default function Home() {
 
                     <p className="paragraph--container">
                         Redefine how your organization handles employee management.<br/>
-                        <br/>
-                        <br/>
-                        <br/>
-                        <br/>
-                        <br/><br/>
-                        <br/>
-                        <br/>
-                        <br/>
-                        <br/><br/><br/><br/><br/><br/><br/><br/><br/>
-
                         Put your employees in the driver seat of their schedules and revolutionize your employee satisfaction.
                     </p>
                     <div className="buttonLink--container">
