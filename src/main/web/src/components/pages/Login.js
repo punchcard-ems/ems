@@ -6,7 +6,7 @@ export default function Login() {
         <div className="login">
             <div className="login--container">
                 <p className="login--paragraph">
-                    Login is not yet supported on the web application version of Punchcard. Please download the mobile application to login.
+                    Login functionality is not yet supported on the web application version of Punchcard. Please download the mobile application to login.
                 </p>
             </div>
         </div>
