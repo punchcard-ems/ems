@@ -155,6 +155,15 @@
         width: 55%;
         border-radius: 2rem;
         padding: 2rem;
+        animation: backgroundSlideIn 1s ease-out;
+    }
+    @keyframes backgroundSlideIn {
+        from {
+            transform: translateX(-100%);
+        }
+        to {
+            transform: translateX(0);
+        }
     }
     .header1 {
         font-size: 2.5rem;

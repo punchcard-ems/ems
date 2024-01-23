@@ -12,6 +12,17 @@
     border-radius: 30px;
     display: flex;
     justify-content: center;
+    align-items: center;
+    animation: slideIn 1s ease-out;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
 }
 
 .pricing--paragraph {
@@ -20,6 +31,6 @@
     width: 750px;
     text-align: center;
     line-height: 1.75;
-    margin: 10% 0 0 0;
+    margin: 10% 0;
 
 }
