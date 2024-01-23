@@ -246,7 +246,7 @@ box-sizing: border-box;
 
 @media (min-width: 1085px) {
     body {
-        margin-top: 5rem;
+        margin-top: 7rem;
     }
     .mobile-header {
         display: none;
