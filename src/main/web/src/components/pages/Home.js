@@ -5,10 +5,10 @@ import '../../css/Home.css';
 
 export default function Home() {
     const slides = [
-        { url: "http://localhost:3000/transfer-shift-and-inbox.png", title: "Shift Creation" },
-        { url: "http://localhost:3000/claim-shift-and-available.png", title: "Shift Display" },
-        { url: "http://localhost:3000/create-shift-and-available.png", title: "Shift Transfer" },
-        { url: "http://localhost:3000/employee-info-and-staff.png", title: "Employee Info" },
+        { url: "https://punchcard.work/transfer-shift-and-inbox.png", title: "Shift Creation" },
+        { url: "https://punchcard.work/claim-shift-and-available.png", title: "Shift Display" },
+        { url: "https://punchcard.work/create-shift-and-available.png", title: "Shift Transfer" },
+        { url: "https://punchcard.work/employee-info-and-staff.png", title: "Employee Info" },
 
     ];
 
