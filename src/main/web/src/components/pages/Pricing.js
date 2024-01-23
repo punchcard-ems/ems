@@ -8,7 +8,7 @@ export default function Pricing() {
                 <p className="pricing--paragraph">
                     Punchcard is currently in beta testing. All features are available for free during the beta period. To join the beta waitlist and
                     stay up to date on all up to date information, please email support@punchcard.work with the subject line "Beta Waitlist".
-                    <br/>Join Punchcard and lets revolution how shift work is done!
+                    <br/><br/>Join Punchcard and let's revolution how shift scheduling is done!
                 </p>
             </div>
         </div>
