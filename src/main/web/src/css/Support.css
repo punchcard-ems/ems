@@ -64,6 +64,7 @@
     .support--container {
         background-color: #28643C;
         width: 75%;
+        padding: 1rem;
         height: 37.5rem;
         border-radius: 30px;
         display: flex;
