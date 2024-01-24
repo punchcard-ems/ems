@@ -1,7 +1,15 @@
-import React from "react";
+import React, {useEffect} from "react";
 import '../../css/Pricing.css';
 
 export default function Pricing() {
+    useEffect(() => {
+        document.title = "Punchcard | Pricing";
+
+        return () => {
+            document.title = "Punchcard";
+        };
+    }, []);
+
     return (
         <div className="pricing">
             <div className="pricing--container">
