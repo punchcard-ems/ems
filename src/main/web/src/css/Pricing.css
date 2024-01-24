@@ -1,36 +1,93 @@
-.pricing {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 5% 0 0 0;
-}
-
-.pricing--container {
-    background-color: #28643C;
-    width: 75%;
-    height: 600px;
-    border-radius: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    animation: slideIn 1s ease-out;
-}
-
-@keyframes slideIn {
-    from {
-        transform: translateX(-100%);
+@media (max-width: 480px) {
+    .pricing {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 5% 0 0 0;
     }
-    to {
-        transform: translateX(0);
+
+    .pricing--container {
+        background-color: #28643C;
+        width: 100%;
+        padding: 1rem;
+        height: 37.5rem;
+        border-radius: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .pricing--paragraph {
+        color: white;
+        font-size: 1.25rem;
+        text-align: center;
+        line-height: 1.75;
+        margin: 10% 0;
     }
 }
 
-.pricing--paragraph {
-    color: white;
-    font-size: 20px;
-    width: 750px;
-    text-align: center;
-    line-height: 1.75;
-    margin: 10% 0;
+@media (min-width: 481px) and (max-width: 1084px) {
+    .pricing {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 5% 0 0 0;
+    }
 
+    .pricing--container {
+        background-color: #28643C;
+        width: 100%;
+        padding: 1rem;
+        height: 37.5rem;
+        border-radius: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .pricing--paragraph {
+        color: white;
+        font-size: 1.25rem;
+        text-align: center;
+        line-height: 1.75;
+        margin: 10% 0;
+    }
+}
+
+@media (min-width: 1085px) {
+    .pricing {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 5% 0 0 0;
+    }
+
+    .pricing--container {
+        background-color: #28643C;
+        width: 75%;
+        padding: 1rem;
+        height: 37.5rem;
+        border-radius: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        animation: slideIn 1s ease-out;
+    }
+
+    @keyframes slideIn {
+        from {
+            transform: translateX(-100%);
+        }
+        to {
+            transform: translateX(0);
+        }
+    }
+
+    .pricing--paragraph {
+        color: white;
+        font-size: 1.25rem;
+        text-align: center;
+        line-height: 1.75;
+        margin: 10% 0;
+    }
 }
