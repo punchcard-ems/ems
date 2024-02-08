@@ -1,6 +1,14 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import '../../css/SignUp.css';
 export default function SignUp() {
+    useEffect(() => {
+        document.title = "Punchcard | Sign Up";
+
+        return () => {
+            document.title = "Punchcard";
+        };
+    }, []);
+
     return (
         <div className="signup">
             <div className="signup--container">

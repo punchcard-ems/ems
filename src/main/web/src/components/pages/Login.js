@@ -1,7 +1,15 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import '../../css/Login.css';
 
 export default function Login() {
+    useEffect(() => {
+        document.title = "Punchcard | Login";
+
+        return () => {
+            document.title = "Punchcard";
+        };
+    }, []);
+
     return (
         <div className="login">
             <div className="login--container">
