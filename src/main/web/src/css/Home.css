@@ -1,3 +1,5 @@
+@import '../utils/colors.css';
+
 @media (max-width: 480px) {
     .slider--container {
         display: none;
@@ -10,10 +12,10 @@
     .text--container {
         max-width: 100%;
         text-align: left;
-        color: #FFFFFF;
+        color: var(--white);
     }
     .text--background {
-        background-color: #28643C;
+        background-color: var(--secondary-green);
         border-radius: 2rem;
         width: 100%;
         margin: 0;
@@ -26,7 +28,7 @@
     }
     .header2 {
         font-size: 1.5rem;
-        color: #50C878;
+        color: var(--primary-green);
         font-weight: normal;
         margin: 0 0 2rem 0;
     }
@@ -51,13 +53,13 @@
         border: none;
     }
     .signup-button {
-        color: #FFFFFF;
+        color: var(--white);
         font-weight: bold;
         font-size: 1.2rem;
         margin: 0;
         padding: 0.7rem;
         width: 100%;
-        background-color: #50C878;
+        background-color: var(--primary-green);
         text-decoration: none;
         border-radius: 10rem;
         text-align: center;
@@ -78,10 +80,10 @@
     }
     .text--container {
         text-align: left;
-        color: #FFFFFF;
+        color: var(--white);
     }
     .text--background {
-        background-color: #28643C;
+        background-color: var(--secondary-green);
         width: 52%;
         border-radius: 2rem;
         padding: 2rem;
@@ -93,7 +95,7 @@
     }
     .header2 {
         font-size: 1.5rem;
-        color: #50C878;
+        color: var(--primary-green);
         font-weight: normal;
         margin: 0 0 2rem 0;
     }
@@ -120,8 +122,8 @@
     }
     .signup-button {
         width: 50%;
-        background-color: #50C878;
-        color: #FFFFFF;
+        background-color: var(--primary-green);
+        color: var(--white);
         font-weight: bold;
         text-decoration: none;
         border-radius: 10rem;
@@ -148,10 +150,10 @@
     }
     .text--container {
         text-align: left;
-        color: #FFFFFF;
+        color: var(--white);
     }
     .text--background {
-        background-color: #28643C;
+        background-color: var(--secondary-green);
         width: 55%;
         border-radius: 2rem;
         padding: 2rem;
@@ -172,7 +174,7 @@
     }
     .header2 {
         font-size: 1.5rem;
-        color: #50C878;
+        color: var(--primary-green);
         font-weight: normal;
         margin: 0 0 2.5rem 0;
     }
@@ -195,8 +197,8 @@
         border: none;
     }
     .signup-button {
-        background-color: #50C878;
-        color: #28643C;
+        background-color: var(--primary-green);
+        color: var(--black);
         text-decoration: none;
         border-radius: 10rem;
         margin: 0 1.86rem 0 0.625rem;
@@ -206,16 +208,16 @@
         align-items: center;
     }
     .signup-button:hover {
-        color: white;
+        color: var(--white);
         font-weight: bold;
         transition: color 0.2s ease-in-out, font-weight 0.2s ease-in-out;
     }
     .learnmore-button:hover {
-        color: #50C878;
+        color: var(--primary-green);
     }
     .learnmore-button {
-        background-color: #F3F2F7;
-        color: #414141;
+        background-color: var(--gray-background);
+        color: var(--gray-action);
         border: none;
         border-radius: 0.313rem;
         padding: 0.625rem;
