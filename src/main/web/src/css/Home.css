@@ -208,6 +208,7 @@
     .signup-button:hover {
         color: white;
         font-weight: bold;
+        transition: color 0.2s ease-in-out, font-weight 0.2s ease-in-out;
     }
     .learnmore-button:hover {
         color: #50C878;
