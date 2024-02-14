@@ -1,0 +1,16 @@
+:root {
+    --white: #FFFFFF;
+    --primary-green: #50C878;
+    --secondary-green: #28643C;
+    --tertiary-green: #68A47C;
+    --green-action: #388E3C;
+    --destructive-action: #DA1717;
+    --blue-action: #4A7AFF;
+    --gray-action: #76787A;
+    --dark-gray: #414141;
+    --gray-background: #F3F2F7;
+    --secondary-gray: #C6C5C7;
+    --placeholder-text: #C5C5C7;
+    --clickable-text: #8A898D;
+    --black: #000000;
+}
