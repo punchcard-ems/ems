@@ -274,7 +274,7 @@ box-sizing: border-box;
         padding: .25rem;
     }
     .navbar li.active {
-        color: var(--tertiary-green);
+        color: var(--secondary-green);
         font-weight: bold;
     }
     .navbar li:hover {
@@ -287,7 +287,7 @@ box-sizing: border-box;
         list-style: none;
         display: flex;
         gap: 5rem;
-        color: var(--gray-action);
+        color: var(--dark-gray);
     }
     .site--title {
         font-size: 3rem;
