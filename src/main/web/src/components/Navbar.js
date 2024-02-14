@@ -10,19 +10,35 @@ export default function Navbar() {
     const [isSidebarOpen, setIsSidebarOpen] = useState(false);
     const sidebarRef = useRef(null);
 
+    // const openNav = () => {
+    //     if (sidebarRef.current) {
+    //         sidebarRef.current.style.width = "100%";
+    //         setIsSidebarOpen(true);
+    //     }
+    // };
+    //
+    // const closeNav = () => {
+    //     if (sidebarRef.current) {
+    //         sidebarRef.current.style.width = "0";
+    //         setIsSidebarOpen(false);
+    //     }
+    // };
     const openNav = () => {
         if (sidebarRef.current) {
-            sidebarRef.current.style.width = "100%";
+            sidebarRef.current.classList.remove("closed");
+            sidebarRef.current.classList.add("open");
             setIsSidebarOpen(true);
         }
     };
 
     const closeNav = () => {
         if (sidebarRef.current) {
-            sidebarRef.current.style.width = "0";
+            sidebarRef.current.classList.remove("open");
+            sidebarRef.current.classList.add("closed");
             setIsSidebarOpen(false);
         }
     };
+
 
     useEffect(() => {
         const closeOffClick = (event) => {

@@ -30,6 +30,7 @@ box-sizing: border-box;
     }
     .hamburger-button {
         border: none;
+        background: none;
     }
     .close-btn {
         background: none;
@@ -40,16 +41,24 @@ box-sizing: border-box;
         flex-direction: column;
         white-space: nowrap;
         height: 100%;
-        width: 0;
+        width: 100%;
+        top: 0;
+        right: -150%;
         position: fixed;
         z-index: 1000;
-        top: 0;
-        right: 0;
         background-color: var(--gray-background);
         box-shadow: -0.4rem 0 .75rem rgba(0, 0, 0, 0.2);
         overflow-x: hidden;
         padding: 1rem 0 1rem 0;
-        transition: 0.5s;
+        /*transition: transform 0.3s ease-in-out;*/
+    }
+    .sidebar.open {
+        right: 0;
+        transition: 0.5s ease-in-out;
+    }
+    .sidebar.closed {
+        right: -150%;
+        transition: 0.5s ease-in-out;
     }
     .nav-list {
         display: flex;
@@ -150,6 +159,7 @@ box-sizing: border-box;
     }
     .hamburger-button {
         border: none;
+        background: none;
     }
     .close-btn {
         background: none;
