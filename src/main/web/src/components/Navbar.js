@@ -102,10 +102,10 @@ export default function Navbar({scrolled}) {
                         </button>
                     </div>
                     <div className="nav-list">
-                        <Link to="/" onClick={closeNav} className="page-link">About Us</Link>
                         <Link to="/" onClick={closeNav} className="page-link">Product</Link>
                         <Link to="/pricing" onClick={closeNav} className="page-link">Pricing</Link>
                         <Link to="/support" onClick={closeNav} className="page-link">Support</Link>
+                        <Link to="/" onClick={closeNav} className="page-link">About Us</Link>
                     </div>
                     <div className="whitespace" />
                     <div className="bottom-buttons">
