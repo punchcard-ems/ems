@@ -73,10 +73,10 @@ export default function Navbar({scrolled}) {
             <nav className={`navbar ${scrolled ? 'navbar-scrolled' : ''}`}>
                 <Link to="/" className="site--title">Punchcard</Link>
                 <ul>
-                    <CustomLink to="/pricing">Product</CustomLink>
+                    <CustomLink to="/product">Product</CustomLink>
                     <CustomLink to="/pricing">Pricing</CustomLink>
                     <CustomLink to="/support">Support</CustomLink>
-                    <CustomLink to="/support">About Us</CustomLink>
+                    <CustomLink to="/aboutus">About Us</CustomLink>
                     <CustomLink to="/login">Login</CustomLink>
                     <FreeLink to="/signup">Try Free</FreeLink>
                 </ul>
@@ -102,10 +102,10 @@ export default function Navbar({scrolled}) {
                         </button>
                     </div>
                     <div className="nav-list">
-                        <Link to="/" onClick={closeNav} className="page-link">Product</Link>
+                        <Link to="/product" onClick={closeNav} className="page-link">Product</Link>
                         <Link to="/pricing" onClick={closeNav} className="page-link">Pricing</Link>
                         <Link to="/support" onClick={closeNav} className="page-link">Support</Link>
-                        <Link to="/" onClick={closeNav} className="page-link">About Us</Link>
+                        <Link to="/aboutus" onClick={closeNav} className="page-link">About Us</Link>
                     </div>
                     <div className="whitespace" />
                     <div className="bottom-buttons">
