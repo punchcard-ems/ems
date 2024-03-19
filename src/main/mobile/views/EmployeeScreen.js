@@ -1,6 +1,5 @@
 import React, {useState} from 'react';
 import {View, StyleSheet, StatusBar, Text, TouchableOpacity} from 'react-native';
-import CustomHeader from "../components/CustomHeader";
 import {ScreenNames} from "../utils/ScreenNames";
 import EmployeeHrsStatusBar from "../components/EmployeeHrsStatusBar";
 import MyShiftList from "../components/MyShiftList";
@@ -12,7 +11,6 @@ import {black, grayBackground, primaryGreen, white} from "../utils/Colors";
 import {CircleUser, Inbox} from "../utils/Icons";
 import {FontAwesomeIcon} from "@fortawesome/react-native-fontawesome";
 import {useNavigation} from "@react-navigation/native";
-import transferInbox from "../components/TransferInbox";
 import TransferInbox from "../components/TransferInbox";
 
 function EmployeeScreen() {
