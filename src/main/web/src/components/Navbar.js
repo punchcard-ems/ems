@@ -6,39 +6,9 @@ import Routing from "./Routing";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars, faXmark } from '@fortawesome/free-solid-svg-icons';
 
-export default function Navbar() {
+export default function Navbar({scrolled}) {
     const [isSidebarOpen, setIsSidebarOpen] = useState(false);
     const sidebarRef = useRef(null);
-
-    // const openNav = () => {
-    //     if (sidebarRef.current) {
-    //         sidebarRef.current.style.width = "100%";
-    //         setIsSidebarOpen(true);
-    //     }
-    // };
-    //
-    // const closeNav = () => {
-    //     if (sidebarRef.current) {
-    //         sidebarRef.current.style.width = "0";
-    //         setIsSidebarOpen(false);
-    //     }
-    // };
-    const openNav = () => {
-        if (sidebarRef.current) {
-            sidebarRef.current.classList.remove("closed");
-            sidebarRef.current.classList.add("open");
-            setIsSidebarOpen(true);
-        }
-    };
-
-    const closeNav = () => {
-        if (sidebarRef.current) {
-            sidebarRef.current.classList.remove("open");
-            sidebarRef.current.classList.add("closed");
-            setIsSidebarOpen(false);
-        }
-    };
-
 
     useEffect(() => {
         const closeOffClick = (event) => {
@@ -58,14 +28,55 @@ export default function Navbar() {
         };
     }, [isSidebarOpen]);
 
+    const openNav = () => {
+        if (sidebarRef.current) {
+            sidebarRef.current.classList.remove("closed");
+            sidebarRef.current.classList.add("open");
+            setIsSidebarOpen(true);
+        }
+    };
+
+    const closeNav = () => {
+        if (sidebarRef.current) {
+            sidebarRef.current.classList.remove("open");
+            sidebarRef.current.classList.add("closed");
+            setIsSidebarOpen(false);
+        }
+    };
+
+    function CustomLink({ to, children, ...props }) {
+        const resolvedPath = useResolvedPath(to);
+        const isActive = useMatch({ path: resolvedPath.pathname , end: true});
+
+        return (
+            <li className={isActive ? "active" : ""}>
+                <Link to={to} {...props}>{children}</Link>
+            </li>
+        )
+    }
+
+    function FreeLink({ to, children, ...props }) {
+        const resolvedPath = useResolvedPath(to);
+        const isActive = useMatch({ path: resolvedPath.pathname , end: true});
+
+        return (
+            <Link to={to} className={`free-link ${isActive ? "active" : ""}`} {...props}>
+                <li className={`free-link-text ${isActive ? "active" : ""}`}>
+                    {children}
+                </li>
+            </Link>
+        )
+    }
 
     return (
         <div>
-            <nav className="navbar">
+            <nav className={`navbar ${scrolled ? 'navbar-scrolled' : ''}`}>
                 <Link to="/" className="site--title">Punchcard</Link>
                 <ul>
+                    <CustomLink to="/pricing">Product</CustomLink>
                     <CustomLink to="/pricing">Pricing</CustomLink>
                     <CustomLink to="/support">Support</CustomLink>
+                    <CustomLink to="/support">About Us</CustomLink>
                     <CustomLink to="/login">Login</CustomLink>
                     <FreeLink to="/signup">Try Free</FreeLink>
                 </ul>
@@ -105,30 +116,5 @@ export default function Navbar() {
             </header>
             <Routing />
         </div>
-    )
-}
-
-
-function CustomLink({ to, children, ...props }) {
-    const resolvedPath = useResolvedPath(to);
-    const isActive = useMatch({ path: resolvedPath.pathname , end: true});
-
-    return (
-        <li className={isActive ? "active" : ""}>
-            <Link to={to} {...props}>{children}</Link>
-        </li>
-    )
-}
-
-function FreeLink({ to, children, ...props }) {
-    const resolvedPath = useResolvedPath(to);
-    const isActive = useMatch({ path: resolvedPath.pathname , end: true});
-
-    return (
-        <Link to={to} className={`free-link ${isActive ? "active" : ""}`} {...props}>
-            <li className={`free-link-text ${isActive ? "active" : ""}`}>
-                {children}
-            </li>
-        </Link>
     )
 }
