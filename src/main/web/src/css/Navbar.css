@@ -136,7 +136,7 @@ box-sizing: border-box;
 
 @media (min-width: 481px) and (max-width: 1084px) {
     body {
-        margin-top: 7rem;
+        margin-top: 5rem;
     }
     .navbar {
         display: none;
@@ -150,7 +150,7 @@ box-sizing: border-box;
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
-        padding: 1rem;
+        padding: 0.5rem 1rem;
     }
     .mobile-header-scrolled {
         box-shadow: 0 0.4rem 0.75rem rgba(0, 0, 0, 0.2);
