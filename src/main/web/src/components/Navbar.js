@@ -81,7 +81,7 @@ export default function Navbar({scrolled}) {
                     <FreeLink to="/signup">Try Free</FreeLink>
                 </ul>
             </nav>
-            <header className="mobile-header">
+            <header className={`mobile-header ${scrolled ? 'mobile-header-scrolled' : ''}`}>
                 <Link to="/" className="site--title">Punchcard</Link>
                 <button
                     className="hamburger-button"

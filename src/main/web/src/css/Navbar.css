@@ -4,7 +4,7 @@ box-sizing: border-box;
 
 @media (max-width: 480px) {
     body {
-        margin-top: 7rem;
+        margin-top: 5rem;
     }
     .navbar {
         display: none;
@@ -18,7 +18,10 @@ box-sizing: border-box;
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
-        padding: 1rem;
+        padding: 0.5rem 1rem;
+    }
+    .mobile-header-scrolled {
+        box-shadow: 0 0.4rem 0.75rem rgba(0, 0, 0, 0.2);
     }
     .site--title {
         font-size: 2rem;
@@ -149,8 +152,11 @@ box-sizing: border-box;
         justify-content: space-between;
         padding: 1rem;
     }
+    .mobile-header-scrolled {
+        box-shadow: 0 0.4rem 0.75rem rgba(0, 0, 0, 0.2);
+    }
     .site--title {
-        font-size: 3rem;
+        font-size: 2rem;
         font-weight: bold;
         color: var(--secondary-green);
         text-decoration: none;
