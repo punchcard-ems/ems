@@ -78,7 +78,7 @@ box-sizing: border-box;
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
-        padding: 1rem;
+        padding: 0.5rem 1rem;
         z-index: 1001;
     }
     .sidebar-title {
@@ -210,11 +210,11 @@ box-sizing: border-box;
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
-        padding: 1rem;
+        padding: 0.5rem 1rem;
         z-index: 1001;
     }
     .sidebar-title {
-        font-size: 3rem;
+        font-size: 2rem;
         font-weight: bold;
         color: var(--secondary-green);
         text-decoration: none;
