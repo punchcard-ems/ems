@@ -77,8 +77,6 @@ const styles = StyleSheet.create({
         display: "flex",
         flexDirection: "column",
         flex: 1,
-        zIndex: 1,
-        elevation: 1,
     },
     container: {
         height: 100,
