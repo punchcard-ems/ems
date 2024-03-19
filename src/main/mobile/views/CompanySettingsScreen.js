@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-native-fontawesome";
 import {useNavigation} from "@react-navigation/native";
 import {ScreenNames} from "../utils/ScreenNames";
 import {ChevronLeft} from "../utils/Icons";
-import {black, secondaryGray, white} from "../utils/Colors";
+import {black, grayBackground, secondaryGray, white} from "../utils/Colors";
 
 function CompanySettingsScreen() {
     const navigation = useNavigation();
@@ -14,7 +14,7 @@ function CompanySettingsScreen() {
     }
 
     return (
-        <View>
+        <View style={styles.screen}>
             <StatusBar
                 barStyle={'dark-content'}
                 animated={true}
@@ -31,6 +31,12 @@ function CompanySettingsScreen() {
 }
 
 const styles = StyleSheet.create({
+    screen: {
+        backgroundColor: grayBackground,
+        display: "flex",
+        flexDirection: "column",
+        flex: 1,
+    },
     headerContainer: {
         display: "flex",
         flexDirection: "row",
